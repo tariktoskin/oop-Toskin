@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "bJOglukka/E=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Edgard\\Downloads\\lab1\\lab1-todo\\TodoApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.32\\microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.32\\microsoft.netcore.app.host.win-x64.8.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}

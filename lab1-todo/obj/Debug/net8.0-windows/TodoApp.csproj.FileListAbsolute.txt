@@ -1,0 +1,15 @@
+C:\Users\Edgard\Downloads\lab1\lab1-todo\bin\Debug\net8.0-windows\TodoApp.exe
+C:\Users\Edgard\Downloads\lab1\lab1-todo\bin\Debug\net8.0-windows\TodoApp.deps.json
+C:\Users\Edgard\Downloads\lab1\lab1-todo\bin\Debug\net8.0-windows\TodoApp.runtimeconfig.json
+C:\Users\Edgard\Downloads\lab1\lab1-todo\bin\Debug\net8.0-windows\TodoApp.dll
+C:\Users\Edgard\Downloads\lab1\lab1-todo\bin\Debug\net8.0-windows\TodoApp.pdb
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.AssemblyInfoInputs.cache
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.AssemblyInfo.cs
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.dll
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\refint\TodoApp.dll
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.pdb
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.genruntimeconfig.cache
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\ref\TodoApp.dll
+C:\Users\Edgard\Downloads\lab1\lab1-todo\obj\Debug\net8.0-windows\TodoApp.csproj.Up2Date
