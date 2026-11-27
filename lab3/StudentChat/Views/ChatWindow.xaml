@@ -1,0 +1,99 @@
+<Window x:Class="StudentChat.ChatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Групповой чат" Width="960" Height="650"
+        MinWidth="680" MinHeight="460"
+        WindowStartupLocation="CenterScreen"
+        Background="#F3F5F9"
+        Loaded="Window_Loaded" Closed="Window_Closed">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="105" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="#203050">
+            <Grid Margin="22,0">
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="Студенческий чат" FontSize="21" FontWeight="Bold"
+                               Foreground="White" />
+                    <TextBlock x:Name="NickText" Foreground="#D5E3FF" FontSize="13" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="14,14,14,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="220" />
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" Background="White" BorderBrush="#DFE5EF"
+                    BorderThickness="1" CornerRadius="9" Margin="0,0,12,0">
+                <ListBox x:Name="MessagesList" Margin="7" BorderThickness="0"
+                         Background="Transparent" HorizontalContentAlignment="Stretch">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border x:Name="MessageBorder" Background="#F2F5FA"
+                                    Padding="10,8" CornerRadius="7" Margin="3,3">
+                                <TextBlock Text="{Binding Display}" TextWrapping="Wrap"
+                                           Foreground="#25324A" FontSize="14" />
+                            </Border>
+                            <DataTemplate.Triggers>
+                                <DataTrigger Binding="{Binding IsPrivate}" Value="True">
+                                    <Setter TargetName="MessageBorder" Property="Background" Value="#FFF0C7" />
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding IsSystem}" Value="True">
+                                    <Setter TargetName="MessageBorder" Property="Background" Value="#E4F0FF" />
+                                </DataTrigger>
+                            </DataTemplate.Triggers>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Border>
+
+            <Border Grid.Column="1" Background="White" BorderBrush="#DFE5EF"
+                    BorderThickness="1" CornerRadius="9" Padding="12">
+                <DockPanel>
+                    <TextBlock DockPanel.Dock="Top" Text="Участники онлайн"
+                               FontWeight="Bold" Foreground="#203050"
+                               FontSize="16" Margin="0,0,0,12" />
+                    <Button DockPanel.Dock="Bottom" x:Name="EveryoneButton"
+                            Content="Писать всем" Height="35" Margin="0,10,0,0"
+                            Background="#E8EEF9" Foreground="#203050"
+                            Click="EveryoneButton_Click" />
+                    <ListBox x:Name="UsersList" BorderThickness="0"
+                             SelectionChanged="UsersList_SelectionChanged"
+                             FontSize="14" />
+                </DockPanel>
+            </Border>
+        </Grid>
+
+        <Border Grid.Row="2" BorderBrush="#DFE5EF" BorderThickness="0,1,0,0"
+                Background="White" Margin="0,14,0,0">
+            <Grid Margin="16,9,16,12">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="24" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <TextBlock x:Name="RecipientText" Grid.Row="0"
+                           Text="Сообщение всем" Foreground="#52627C" FontSize="13" />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="110" />
+                    </Grid.ColumnDefinitions>
+                    <TextBox x:Name="MessageInput" Grid.Column="0"
+                             Margin="0,0,10,0" Padding="9,7"
+                             VerticalContentAlignment="Center" FontSize="14"
+                             MaxLength="500"
+                             KeyDown="MessageInput_KeyDown" />
+                    <Button x:Name="SendButton" Grid.Column="1" Content="Отправить"
+                            Background="#3468CF" Foreground="White" BorderThickness="0"
+                            FontWeight="SemiBold" Click="SendButton_Click" />
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

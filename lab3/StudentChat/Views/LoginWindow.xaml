@@ -1,0 +1,58 @@
+<Window x:Class="StudentChat.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="StudentChat — вход и сервер"
+        Width="510" Height="655" MinHeight="600"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize"
+        Background="#F3F5F9">
+    <Grid>
+        <Border Width="422" Padding="25" CornerRadius="14"
+                Background="White" BorderBrush="#E0E5EF" BorderThickness="1"
+                VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <TextBlock Text="StudentChat" FontSize="28" FontWeight="Bold"
+                           Foreground="#203050" Margin="0,0,0,3" />
+                <TextBlock Text="Один проект — сервер и WPF-клиент"
+                           Foreground="#64748B" FontSize="13" Margin="0,0,0,19" />
+
+                <TextBlock Text="Адрес сервера (IP или имя)" FontWeight="SemiBold"
+                           Foreground="#334155" Margin="0,0,0,5" />
+                <TextBox x:Name="ServerBox" Text="127.0.0.1" Height="35" Padding="9,6"
+                         FontSize="14" Margin="0,0,0,12" />
+
+                <TextBlock Text="Порт" FontWeight="SemiBold" Foreground="#334155"
+                           Margin="0,0,0,5" />
+                <TextBox x:Name="PortBox" Text="5000" Height="35" Padding="9,6"
+                         FontSize="14" Margin="0,0,0,14" />
+
+                <Border Background="#EEF3FB" CornerRadius="8" Padding="12" Margin="0,0,0,17">
+                    <StackPanel>
+                        <TextBlock Text="1. Хочешь создать чат на этом ПК?" FontWeight="SemiBold"
+                                   FontSize="13" Foreground="#203050" Margin="0,0,0,7"/>
+                        <Button x:Name="StartServerButton" Content="Запустить сервер"
+                                Height="36" Background="#D5E3FF" Foreground="#203050"
+                                Click="StartServerButton_Click"/>
+                        <TextBlock x:Name="ServerStatusText" Text="Сервер ещё не запущен"
+                                   TextWrapping="Wrap" FontSize="12" Foreground="#64748B"
+                                   Margin="0,8,0,0"/>
+                    </StackPanel>
+                </Border>
+
+                <TextBlock Text="2. Войти в чат" FontWeight="SemiBold"
+                           FontSize="13" Foreground="#203050" Margin="0,0,0,9"/>
+                <TextBlock Text="Ник (до 20 символов)" FontWeight="SemiBold"
+                           Foreground="#334155" Margin="0,0,0,5" />
+                <TextBox x:Name="NickBox" Height="36" Padding="9,6"
+                         FontSize="14" Margin="0,0,0,14" />
+                <Button x:Name="ConnectButton" Content="Войти в чат"
+                        Height="42" Background="#3468CF" Foreground="White"
+                        BorderThickness="0" FontWeight="SemiBold"
+                        Click="ConnectButton_Click" />
+                <TextBlock x:Name="ErrorText" Foreground="#C62828" TextWrapping="Wrap"
+                           Margin="0,9,0,0" MinHeight="26" FontSize="12" />
+                <TextBlock Text="На другом ПК: запусти ту же программу, но не включай сервер; введи IP хоста."
+                           Foreground="#64748B" TextWrapping="Wrap" FontSize="12" />
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

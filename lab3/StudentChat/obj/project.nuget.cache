@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Z4IC5qVbU8I=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Edgard\\Desktop\\lab2\\lab3-chat\\StudentChat_Organized_WPF\\StudentChat\\StudentChat.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.32\\microsoft.windowsdesktop.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.32\\microsoft.netcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.32\\microsoft.aspnetcore.app.ref.8.0.32.nupkg.sha512",
+    "C:\\Users\\Edgard\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.32\\microsoft.netcore.app.host.win-x64.8.0.32.nupkg.sha512"
+  ],
+  "logs": []
+}
